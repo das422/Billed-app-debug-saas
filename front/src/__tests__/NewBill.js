@@ -28,7 +28,7 @@ describe("Given I am connected as an employee", () => {
     test("Then handleChangeFile() function should be called", () => {
       const newBill = new NewBill({
         document,
-        onNavigate: {},
+        onNavigate: jest.fn(),
         store: mockStore,
         localStorage: {},
       });
